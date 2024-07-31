@@ -1,0 +1,35 @@
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    text-align: center;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 75px;
+        cursor: pointer;
+        transition: .3s linear;
+        color: transparent;
+        background-size: 200%;
+        -webkit-background-clip: text;
+        animation: move 20s linear infinite;
+    }
+
+    @keyframes move {
+        100% {
+            background-position: 2000px 0;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: #c5c5c5;
+        padding: 0 250px;
+        margin-bottom: 25px;
+    }
+}

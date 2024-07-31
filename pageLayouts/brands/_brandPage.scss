@@ -1,0 +1,276 @@
+@use 'baseLayouts';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$shadowColor: 0 0 10px rgba(0, 138, 180, 0.5);
+$tittleColor: #003aa5;
+$bgImg: linear-gradient(to left, rgb(6, 131, 204), rgb(0, 51, 190), black, rgb(35, 31, 31));
+$btnA: linear-gradient(45deg, #00c3ff, #0197dd, #006fb9, #0062be);
+$btnB: rgba(0, 110, 255, 0.65);
+
+.brandPage {
+
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(150deg, black, rgb(43, 32, 32));
+
+    .menu {
+
+        .navbar ul li a:hover {
+            color: $tittleColor;
+        }
+
+    }
+
+    .header {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(/assets/alfa-romeo-giulia.jpg);
+        background-position: center center;
+    }
+
+    .header-content {
+
+        h1 {
+            -webkit-text-stroke: 2px $tittleColor;
+            background-image: $bgImg;
+        }
+
+        h1:hover {
+            text-shadow: $shadowColor,
+                         $shadowColor,
+                         $shadowColor,
+                         $shadowColor,
+                         $shadowColor,
+                         $shadowColor;
+        }
+
+    }
+
+    .brands {
+        padding: 100px 0;
+        background: linear-gradient(150deg, black, rgb(11, 76, 161));
+        position: relative;
+    }
+    
+    .brands-content {
+        text-align: center;
+    
+        h2 {
+            font-size: 55px;
+            line-height: 70px;
+            color: rgb(209, 204, 204);
+            text-transform: uppercase;
+            padding: 0 250px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+    }
+    
+    .txt-p {
+        font-size: 16px;
+        color: rgb(209, 204, 204);
+        padding: 0 250px;
+        margin-bottom: 35px;
+    }
+    
+    .brands-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .brands-1 {
+        padding: 0 25px;
+    
+        img {
+            width: 200px;
+            height: 125px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    
+        h3 {
+            color: rgb(209, 204, 204);
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+    
+        p {
+            color: rgb(209, 204, 204);
+        }
+    }
+    
+    .brands-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .scuderia {
+        padding: 100px 0;
+        background: linear-gradient(150deg, rgb(5, 71, 170), rgb(177, 7, 199));
+        position: relative;
+    }
+    
+    .scuderia-content {
+        text-align: center;
+    
+        h2 {
+            font-size: 55px;
+            line-height: 70px;
+            color: rgb(209, 204, 204);
+            text-transform: uppercase;
+            padding: 0 250px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+    }
+
+    .scuderia-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .scuderia-1 {
+        padding: 0 25px;
+    
+        img {
+            width: 200px;
+            height: 125px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    
+        h3 {
+            color: rgb(209, 204, 204);
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+    
+        p {
+            color: rgb(209, 204, 204);
+        }
+    }
+    
+    .scuderia-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .btn-1 {
+
+        a i, 
+        a i:nth-child(2) {
+            background: $btnA;
+        }
+
+        a span {
+            background: $btnB;
+        }
+        
+    }
+
+    @media(max-width:991px){
+
+        .menu{
+            padding: 30px;
+        }
+
+        .menu label {
+            display: initial;
+        }
+
+        .menu .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #323337;
+            display: none;
+        }
+
+        .menu .navbar ul li {
+            width: 100%;
+        }
+
+        #menu:checked ~ .navbar {
+            display: initial;
+        }
+
+        .header {
+            min-height: 0vh;
+        }
+
+        .header-content {
+            padding: 100px 30px;
+
+            h1 {
+                font-size: 45px;
+                -webkit-text-stroke: 1px $tittleColor;
+            }
+
+            p {
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        .scuderia-content {
+            padding: 30px;
+            
+            h2 {
+                font-size: 35px;
+                padding: 0;
+            }
+    
+            .txt-p {
+                padding: 0;
+                font-size: 14px;
+            }
+    
+            .scuderia-group {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+        }
+
+        .brands {
+            padding: 30px;
+        }
+    
+        .brands-content h2 {
+            padding: 0;
+        }
+    
+        .brands-group {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+    
+        .brands-img {
+            display: none;
+        }
+
+        .txt-p {
+            padding: 0;
+        }
+
+        .btn-1 {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            padding: 30px;
+        }
+
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+}

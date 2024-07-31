@@ -1,0 +1,42 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar ul li {
+        position: relative;
+        float: left;
+
+        a {
+            font-size: 18px;
+            padding: 20px;
+            color: #fffdfc;
+            display: block;
+            font-weight: 600;
+        }
+        
+    }
+
+    label {
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}

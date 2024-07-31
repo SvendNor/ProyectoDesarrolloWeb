@@ -1,0 +1,52 @@
+.cars {
+    padding: 100px 0;
+    position: relative;
+}
+
+.cars-content {
+    text-align: center;
+
+    h2 {
+        font-size: 55px;
+        line-height: 70px;
+        color: rgb(209, 204, 204);
+        text-transform: uppercase;
+        padding: 0 250px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+.cars-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.cars-1 {
+    padding: 0 25px;
+
+    img {
+        width: 200px;
+        height: 125px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    h3 {
+        color: rgb(209, 204, 204);
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: rgb(209, 204, 204);
+    }
+}
+
+.cars-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
